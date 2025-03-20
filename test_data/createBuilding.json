@@ -1,0 +1,20 @@
+{
+    "name": "test_building_creation_four",
+    "organisation_id": 116,
+    "address_line_1": "333,S Miami Ave",
+    "address_line_2": "",
+    "state_code": "FL",
+    "city_name": "Miami",
+    "zip_code": "33130",
+    "latitude": "25.7710405",
+    "longitude": "-80.1930838",
+    "type": "multi_unit",
+    "monthly_rent": 0,
+    "status": null,
+    "security_deposit": 0,
+    "cats_allowed": null,
+    "dogs_allowed": null,
+    "number_of_bathrooms": 0,
+    "number_of_bedrooms": 0,
+    "pha_voucher_enabled": false
+}
