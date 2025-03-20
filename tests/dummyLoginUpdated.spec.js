@@ -26,8 +26,6 @@ test("Login via token Injection", async({page})=>{
 
 
 test("add Property", async({page})=>{
-    const context_api_for_creating_building = await request.newContext();
-    const apiUtils = new APIUtils(context_api_for_creating_building);
     const response_of_building_creation = await apiUtils.createBuilding(token);
     console.log("response_of_building_creation",response_of_building_creation);
        

@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test');
 const { before } = require('node:test');
-const data = JSON.parse(JSON.stringify(require('../test_data/matrixLogin.json')));
+const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
 const {POmanager} = require('../pageobjects/POmanager');
 let webContext;
 

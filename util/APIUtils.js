@@ -1,5 +1,5 @@
-const data = JSON.parse(JSON.stringify(require('../test_data/matrixLogin.json')));
 const createBuildingData = JSON.parse(JSON.stringify(require('../test_data/createBuilding.json')));
+const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
 class APIUtils {
     constructor(apiContext){
         this.apiContext = apiContext;

@@ -1,5 +1,5 @@
 const {test, expect,request} = require('@playwright/test');
-const data = JSON.parse(JSON.stringify(require('../test_data/matrixLogin.json')));
+const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
 let token;
 
 
