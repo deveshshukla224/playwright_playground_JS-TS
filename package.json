@@ -11,6 +11,7 @@
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.1",
+    "exceljs": "^4.4.0",
     "typescript": "^5.8.2"
   }
 }
