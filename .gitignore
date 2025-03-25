@@ -8,4 +8,4 @@ node_modules/
 *State.json
 /screenshots/
 /downloaded_files/
-.env
+env_files/.env.*
