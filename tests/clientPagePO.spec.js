@@ -1,5 +1,7 @@
-const {test,expect} = require('@playwright/test');
-const {POmanager} = require('../pageobjects/POmanager');
+//const {test,expect} = require('@playwright/test');
+import {test,expect} from '@playwright/test'
+//const {POmanager} = require('../pageobjects/POmanager');
+import {POmanager} from '../pageobjects/POmanager'
 const clientpage_dataset = JSON.parse(JSON.stringify(require('../test_data/clientPage_test_data.json')));
 
 

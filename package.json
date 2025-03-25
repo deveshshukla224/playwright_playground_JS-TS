@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@faker-js/faker": "^9.6.0",
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.1",
     "exceljs": "^4.4.0",
     "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
   }
 }

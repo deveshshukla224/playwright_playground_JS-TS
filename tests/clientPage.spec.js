@@ -1,4 +1,12 @@
-const {test,expect} = require('@playwright/test');
+//const {test,expect} = require('@playwright/test');
+import {test,expect} from '@playwright/test'
+import { faker } from '@faker-js/faker';
+import { randomInt } from "crypto";
+import {config} from '../utils/config'
+
+function getSecureRandom10DigitNumber() {
+  return String(randomInt(1000000000, 9999999999)); // Secure 10-digit number
+}
 
 
 test.use({
@@ -9,7 +17,10 @@ test.use({
   });
 
 test("Practise - Client Login Page", async ({page}) => {
-      await page.goto("https://rahulshettyacademy.com/client");
+      const email_value= faker.internet.email()
+      const first_name = faker.person.firstName()
+      const last_name=faker.person.lastName()
+      await page.goto(config.rahul_sheetty_ecom_webapp);
       const userName = page.locator("input[placeholder='email@example.com']");
       const password = page.locator("input#userPassword");
       const loginButton = page.locator("#login");
@@ -27,10 +38,10 @@ test("Practise - Client Login Page", async ({page}) => {
       const toast_notification = page.locator("#toast-container");
       const loginbtn_on_registration_page = page.locator("a.text-reset");
       await registerLink.click();
-      await firstNameInput.fill("Devesh");
-      await lastNameInput.fill("Kumar");
-      await emailInput.fill("asdfgh1jkiii11123455331211142101@mail.com");
-      await phoneInput.fill("1234511111");
+      await firstNameInput.fill(first_name);
+      await lastNameInput.fill(last_name);
+      await emailInput.fill(email_value);
+      await phoneInput.fill(getSecureRandom10DigitNumber());
       await passwordInput.fill("Qwerty@123");
       await confirmPasswordInput.fill("Qwerty@123");
       await adultCheckbox.check();
@@ -66,7 +77,7 @@ test("Practise - Client Login Page", async ({page}) => {
             console.log("account created");
             await loginBtnAfterRegistration.click();
             console.log("login button clicked");
-            await userName.fill("asdfgh1jkiii1112345533121114210177@mail.com");
+            await userName.fill(email_value);
             console.log("username filled");
             await password.fill("Qwerty@123");
             console.log("password filled");

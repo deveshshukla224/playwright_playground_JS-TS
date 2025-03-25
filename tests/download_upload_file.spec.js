@@ -1,7 +1,11 @@
-const {test,expect} = require("@playwright/test");
-const ExcelJS = require('exceljs');
-const fs = require("fs");
-const path = require("path");
+//const {test,expect} = require("@playwright/test");
+import {test,expect} from '@playwright/test'
+//const ExcelJS = require('exceljs');
+import ExcelJS from 'exceljs'
+//const fs = require("fs");
+import fs from 'fs'
+//const path = require("path");
+import path from 'path'
 
 
 const workbook = new ExcelJS.Workbook();

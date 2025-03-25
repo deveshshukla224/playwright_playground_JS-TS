@@ -1,7 +1,10 @@
-const {test, expect} = require('@playwright/test');
-const { before } = require('node:test');
+//const {test, expect} = require('@playwright/test');
+import {test,expect} from '@playwright/test'
+//const { before } = require('node:test');
+import {before} from 'node:test'
 const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
-const {POmanager} = require('../pageobjects/POmanager');
+//const {POmanager} = require('../pageobjects/POmanager');
+import {POmanager} from '../pageobjects/POmanager'
 let webContext;
 
 test.beforeAll(async ({browser}) => {
