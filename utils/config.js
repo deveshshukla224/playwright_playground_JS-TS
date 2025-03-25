@@ -2,11 +2,11 @@ import dotenv from 'dotenv';
 
 // Get environment from command-line argument or default to 'dev'
 const ENV = process.env.TEST_ENV || 'dev';
+
+
 // Load the correct .env file
 //here env_files is directory where all env files are stored
 //so added this to resolve exact path
-
-
 dotenv.config({ path: `env_files/.env.${ENV}` });
 
 
