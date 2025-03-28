@@ -1,4 +1,4 @@
-const { customFixtureTest} = require('../util/custom-fixture');
+import { customFixtureTest} from '../util/custom-fixture';
 
 customFixtureTest('Test using customData1', async ({ testData }) => {
     console.log(testData.userName); // Output: testuser

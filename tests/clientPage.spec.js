@@ -16,7 +16,7 @@ test.use({
     viewport: null, // This ensures the window starts maximized
   });
 
-test("Practise - Client Login Page", async ({page}) => {
+test(`@Web Practise - Client Login Page`, async ({page}) => {
       const email_value= faker.internet.email()
       const first_name = faker.person.firstName()
       const last_name=faker.person.lastName()

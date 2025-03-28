@@ -1,4 +1,5 @@
-const { test, request } = require("@playwright/test");
+//const { test, request } = require("@playwright/test");
+import {test, request} from '@playwright/test';
 
 test("Test Wait for load state", async ({ page }) => {
   await page.goto("https://rahulshettyacademy.com/client");

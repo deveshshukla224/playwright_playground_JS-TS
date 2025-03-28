@@ -1,4 +1,5 @@
-const {test,expect} = require('@playwright/test');
+//const {test,expect} = require('@playwright/test');
+import {test, expect} from '@playwright/test';
 test("End to End Purchase Product Exercise", async ({browser}) => {
     const context = await browser.newContext();
     const page = await context.newPage();

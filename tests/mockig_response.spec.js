@@ -1,5 +1,7 @@
-const {test,expect} = require('@playwright/test');
-const { assert } = require('console');
+//const {test,expect} = require('@playwright/test');
+import {test, expect} from '@playwright/test';
+//const { assert } = require('console');
+import { assert } from 'console';
 const mockData = {
     responseCode: 200,
     products: []

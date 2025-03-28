@@ -1,5 +1,6 @@
-const {test,expect} = require('@playwright/test');
-const { url } = require('inspector');
+//const {test,expect} = require('@playwright/test');
+import {test, expect} from '@playwright/test';
+import { url } from 'inspector';
 
 
 test('intercepting request',async({page})=>{

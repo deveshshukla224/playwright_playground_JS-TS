@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 import {before} from 'node:test'
-const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
+const data = JSON.parse(JSON.stringify('../test_data/dummyLogin.json'));
 import {POmanager} from '../page_object_ts/pageobjects/POmanager';
 let webContext;
 

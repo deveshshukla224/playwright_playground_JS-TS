@@ -1,6 +1,7 @@
-const {test,expect} = require('@playwright/test');
-const {POmanager} = require('../pageobjects/POmanager');
-const logindataset = JSON.parse(JSON.stringify(require('../test_data/loginPage_test_data.json')));
+//const {test,expect} = require('@playwright/test');
+import {test, expect} from '@playwright/test';
+import {POmanager} from '../pageobjects/POmanager';
+const logindataset = JSON.parse(JSON.stringify('../test_data/loginPage_test_data.json'));
 
 test('Login Page', async ({ page }) => {
     

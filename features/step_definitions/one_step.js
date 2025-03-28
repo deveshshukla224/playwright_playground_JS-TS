@@ -1,5 +1,8 @@
-const {Given,When,Then,After} = require('@cucumber/cucumber');
-const {chromium} = require('@playwright/test');
+// const {Given,When,Then,After} = require('@cucumber/cucumber');
+// const {chromium} = require('@playwright/test');
+
+import { Given,When,Then,After } from '@cucumber/cucumber';
+import { chromium } from '@playwright/test';
 
 
 //let browser,context,page;

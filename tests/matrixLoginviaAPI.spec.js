@@ -1,5 +1,6 @@
-const {test, expect,request} = require('@playwright/test');
-const data = JSON.parse(JSON.stringify(require('../test_data/dummyLogin.json')));
+//const {test, expect,request} = require('@playwright/test');
+import {test, expect,request} from '@playwright/test';
+const data = JSON.parse(JSON.stringify('../test_data/dummyLogin.json'));
 let token;
 
 

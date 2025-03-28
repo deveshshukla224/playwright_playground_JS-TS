@@ -1,5 +1,6 @@
-const {test, expect,request} = require('@playwright/test');
-const {APIUtils} = require('../util/APIUtils');
+//const {test, expect,request} = require('@playwright/test');
+import {test, expect,request} from '@playwright/test';
+import {APIUtils} from '../util/APIUtils';
 let token;
 
 test.beforeAll(async({})=>{
